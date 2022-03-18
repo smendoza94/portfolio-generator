@@ -48,7 +48,14 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'gitbhub',
-                message: 'Enter your GitHub Username'
+                message: 'Enter your GitHub Username: (Reqiured)',
+                validate: nameInput => {
+                    if(nameInput) {
+                        return true;
+                    } else {
+                        console.log('Please enter your name!')
+                    }
+                }
             },
             {
                 type: 'input',
@@ -72,12 +79,26 @@ const promptProject = portfolioData => {
         {
             type: 'input',
             name: 'name',
-            message: 'What is the name of your project?'
+            message: 'What is the name of your project? (Required)',
+            validate: nameInput => {
+                if(nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your name!')
+                }
+            }
         },
         {
             type: 'input',
             name: 'description',
-            message: 'Provide a descriptin of the project (Required)'
+            message: 'Provide a descriptin of the project (Required)',
+            validate: nameInput => {
+                if(nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your name!')
+                }
+            }
         },
         {
             type: 'checkbox',
@@ -88,7 +109,14 @@ const promptProject = portfolioData => {
         {
             type: 'input',
             name: 'link',
-            message: 'Enter the GitHub link to your project. (Required)'
+            message: 'Enter the GitHub link to your project. (Required)',
+            validate: nameInput => {
+                if(nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your name!')
+                }
+            }
         },
         {
             type: 'confirm',
