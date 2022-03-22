@@ -171,7 +171,7 @@ const promptProject = portfolioData => {
 //         });
 //     });
 
-// // Refactor above code to
+// // Refactor above code to look clear, created generate-site.js that contains the code and require here
 
 promptUser()
     .then(promptProject)
